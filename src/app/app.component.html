@@ -1,8 +1,14 @@
 <!-- <router-outlet></router-outlet> -->
+
 <div class="container">
+
   <app-add-user></app-add-user>
   <div class="user-div" *ngFor="let user of pusers">
     <div class="user-name">{{user.name}}</div>
     <div class="user-status">{{user.status}}</div>
   </div>
+
+  <app-child>
+    <p #paragraph>This is a paragraph</p>
+  </app-child>
 </div>
