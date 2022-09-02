@@ -1,6 +1,6 @@
 <!-- <router-outlet></router-outlet> -->
 
-<div class="container">
+<!-- <div class="container">
 
   <app-add-user></app-add-user>
   <div class="user-div" *ngFor="let user of pusers">
@@ -11,4 +11,23 @@
   <app-child>
     <p #paragraph>This is a paragraph</p>
   </app-child>
+</div> -->
+
+<div class="container">
+  <h1>Custom Directives</h1>
+
+  <!-- set Background color -->
+  <p setBg appHover>This is a demo to understand custom attribute directive in Angular</p>
+
+  <p appHighlight appHover>This is a demo to understand @hostlistner in Angular</p>
+
+  <p class="hostBinding" appBetterhighlight [defaultColor]="'skyblue'" [appBetterhighlight]="'yellow'">
+    This is a demo to understand @hostbinding in Angular
+  </p>
+
+  <div [appClass]="{highlightC:false,'change-font':true}">
+    <p>This is a demo to understand custom ngClass (eg:appClass)
+      in Angular</p>
+  </div>
+
 </div>

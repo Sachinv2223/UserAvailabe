@@ -14,17 +14,17 @@ export class AppComponent implements OnInit {
   constructor(private userService: UserService) {
   }
 
-  @ViewChild('paragraph', { static: true })
-  pargraphEl!: ElementRef;
+  // @ViewChild('paragraph', { static: true })
+  // pargraphEl!: ElementRef;
 
-  pusers: { name: string; status: string; }[] = [];
+  // pusers: { name: string; status: string; }[] = [];
 
   ngOnInit() {
-    this.pusers = this.userService.users; //call by refernce
-    console.log("Inside ngOnInit of parent class")
-    this.pargraphEl.nativeElement.innerHTML = "This paragraph is edited in ngOnInit() of parent class";
-    this.pargraphEl.nativeElement.style.margin = '20px';
-    console.log(this.pargraphEl);
+    // this.pusers = this.userService.users; //call by refernce
+    // console.log("Inside ngOnInit of parent class")
+    // this.pargraphEl.nativeElement.innerHTML = "This paragraph is edited in ngOnInit() of parent class";
+    // this.pargraphEl.nativeElement.style.margin = '20px';
+    // console.log(this.pargraphEl);
   }
 
 
