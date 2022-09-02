@@ -16,7 +16,7 @@ export class ClassDirective {
     //     this.renderer.addClass(this.el.nativeElement, entry[0]);
     //   }
     // }
-    for (let [className, value] of entries) {
+    for (let [className, value] of entries) {  //Array destructuring
       if (value) {
         this.renderer.addClass(this.el.nativeElement, className);
       }

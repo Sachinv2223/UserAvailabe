@@ -21,13 +21,15 @@
 
   <p appHighlight appHover>This is a demo to understand @hostlistner in Angular</p>
 
-  <p class="hostBinding" appBetterhighlight [defaultColor]="'skyblue'" [appBetterhighlight]="'yellow'">
+  <p appBetterhighlight [defaultColor]="'skyblue'" [appBetterhighlight]="'yellow'">
     This is a demo to understand @hostbinding in Angular
   </p>
 
-  <div [appClass]="{highlightC:false,'change-font':true}">
-    <p>This is a demo to understand custom ngClass (eg:appClass)
-      in Angular</p>
-  </div>
+  <p [appClass]="{highlightC:false,'change-font':true}">This is a demo to understand custom ngClass (eg:appClass) in
+    Angular</p>
+
+
+  <p [appStyle]="{backgroundColor: active ?'darkblue':'darkred',color:'white'}">This is a demo to understand custom ngStyle in
+    Angular</p>
 
 </div>

@@ -27,6 +27,7 @@ export class AppComponent implements OnInit {
     // console.log(this.pargraphEl);
   }
 
+  active:boolean = true;
 
 
 }
